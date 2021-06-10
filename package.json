@@ -4,8 +4,10 @@
   "description": "Test algorithms.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test-cover": "jest --coverage"
+    "lint": "editorconfig-checker && eslint --ext .js .",
+    "jest": "jest",
+    "jest-cover": "jest --coverage",
+    "test": "npm run lint && npm run jest && npm run jest-cover"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,10 @@
   },
   "homepage": "https://github.com/viktor-ulyankin/algorithms#readme",
   "devDependencies": {
+    "editorconfig-checker": "^4.0.2",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.4"
   }
 }
