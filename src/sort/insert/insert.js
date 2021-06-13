@@ -1,4 +1,4 @@
-function insertionSort(array) {
+function insertSort(array) {
   if (array.length > 1) {
     for (let i = 1; i < array.length; i++) {
       let targetIndex = 0;
@@ -17,4 +17,4 @@ function insertionSort(array) {
   return array;
 }
 
-module.exports = insertionSort;
+module.exports = insertSort;

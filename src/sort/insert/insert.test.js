@@ -1,4 +1,4 @@
-const insertionSort = require('./insertion');
+const insertSort = require('./insert');
 
 describe.each([
 
@@ -12,8 +12,8 @@ describe.each([
   ],
   [[], []],
 
-])('Test insertionSort() [%#]', (array, expected) => {
+])('Test insertSort() [%#]', (array, expected) => {
   test('Should return correct value', () => {
-    expect(insertionSort(array)).toEqual(expected);
+    expect(insertSort(array)).toEqual(expected);
   });
 });
